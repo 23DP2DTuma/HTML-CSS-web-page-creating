@@ -220,6 +220,8 @@ hr {
     padding: 80px 0;
 }
 
+
+
 .section--devices {
     background: url(../images/devices-bg.jpg)
     center no-repeat;
@@ -227,6 +229,10 @@ hr {
     background-size: cover;
     padding-bottom: 0;
     margin-bottom: 40px;
+}
+
+.section--grey {
+    background-color: #fff;
 }
 
 .section_header {
@@ -263,6 +269,8 @@ hr {
     font-size: 15px;
 }
 
+/* about */
+
 .about {
     margin-top: 80px;
     display: flex;
@@ -271,6 +279,9 @@ hr {
 
 .about_item {
     width: 380px;
+}
+
+.about_inner {
     background-color: #95e1d3;
     position: relative;
 }
@@ -399,10 +410,179 @@ hr {
     right: 0;
 }
 
+/*we do*/
+
 .wedo {
     display: flex;
 }
 
 .wedo_item {
     width: 50%;
+}
+
+/* garmozka*/
+
+.garmozkas_item {
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+
+.garmozkas_item.active .garmozka_content{
+    display: block;
+}
+
+.garmozkas_item.active .garmozka_header {
+    border-bottom-color: #e5e5e5;
+}
+
+.garmozkas_item.active .garmozka_header::after {
+    transform: translateY(-50%) rotate(-45deg);
+    margin-top: 5px;
+}
+
+.garmozka_header {
+    padding: 15px 20px 15px 65px;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.garmozka_header::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+}
+
+.garmozka_icon {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.garmozka_content {
+    padding: 15px 20px;
+    font-size: 15px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+    display: none;
+}
+
+.garmozka_title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+/*reviews*/
+
+.reviews {
+    padding: 0 110px;
+    position: relative;
+}
+
+.reviews_item {
+    padding-left: 205px;
+    position: relative;
+}
+
+.reviews_foto {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    border: 3px solid #95e1d3;
+}
+
+.reviews_text {
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 300;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.reviews_autor {
+    font-family: "Kaushan Script", cursive;
+    font-size: 24px;
+    color: #333;
+}
+
+.reviews_autor:before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-right: 10px;
+}
+
+.reviews_btn {
+    font-size: 0;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.reviews_btn:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-top: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+
+}
+
+.reviews_btn--Prev {
+    left: 0;
+    transform: rotate(-135deg);
+}
+
+.reviews_btn--next {
+    right: 0;
+    transform: rotate(45deg);
+}
+
+
+/*social*/
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social_item {
+    width: 55px;
+    height: 55px;
+    line-height: 1;
+    padding: 12px 10px;
+    text-decoration: none;
+    color: #f38181;
+    background-color: #fce38a;
+    font-size: 30px;
+    border-right: 1px solid #f38181;
+    transition: background 0.1s linear, color 0.1s linear;
+}
+
+.social_item:last-child {
+    border-right: 0;
+}
+
+.social_item:hover {
+    background-color: #f38181;
+    color: #fff;
 }

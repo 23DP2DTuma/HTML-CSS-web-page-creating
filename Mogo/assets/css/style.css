@@ -869,6 +869,20 @@ hr {
 
 .footer_inner {
     padding-bottom: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_col--first {
+    width: 40%;
+}
+
+.footer_col--second {
+    width: 29%;
+}
+
+.footer_col--third {
+    width: 22%;
 }
 
 .footer_logo {
@@ -913,6 +927,68 @@ hr {
     font-size: 18px;
     color: #95e1d3;
     margin-left: 10px;
+}
+
+.footer_title {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+/* blogs */
+
+.blogss_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.blogss_img {
+    width: 120px;
+    height: 80px;
+}
+
+.blogss_content {
+    padding-left: 20px;
+}
+
+.blogss_title {
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+    font-size: 12px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.blogss_title:hover {
+    text-decoration: underline;
+}
+
+.blogss_date {
+    font-size: 13px;
+    color: #999;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* instagram */
+
+.instagram {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.instagram_item {
+    width: 32.33333%;
+    border-bottom: 1px solid #fff;
+}
+
+.instagram_item img {
+    display: block;
 }
 
 /* subscribe block */
@@ -969,4 +1045,18 @@ hr {
 
 .subscibe_btn:focus {
     outline: 0;
+}
+
+/*copyright */
+
+.copyright {
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0;
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+}
+
+.copyright span {
+    color: #f38181;
 }

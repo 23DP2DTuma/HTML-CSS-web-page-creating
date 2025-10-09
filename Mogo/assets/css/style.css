@@ -28,7 +28,8 @@ hr {
 /*Container*/
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -287,13 +288,15 @@ hr {
 /* about */
 
 .about {
-    margin-top: 80px;
+    flex-wrap: wrap;
+    margin: 80px -15px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .about_item {
-    width: 380px;
+    width: 33.33333%;
+    padding: 0 15px;
 }
 
 .about_inner {
@@ -316,6 +319,8 @@ hr {
 
 .about_image img {
     display: block;
+    max-width: 100%;
+    height: auto;
     transition: opacity 0.2s linear;
 }
 
@@ -366,6 +371,7 @@ hr {
 
 .stat {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .stat_item {
@@ -392,15 +398,23 @@ hr {
     text-transform: uppercase;
 }
 
+/*services*/
+
+.services_item--border {
+    border-bottom: 1px solid #e5e5e5 ;
+}
+
+
 .services {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .services_item {
-    flex: 1 1 0;
-    padding-left: 85px;
-    padding-right: 35px;
+    width: 33.33333%;
+    padding: 0 35px 40px 85px;
     position: relative;
+    margin-bottom: 40px;
 }
 
 .services_icon {
@@ -433,6 +447,8 @@ hr {
 
 .devices_item {
     display: block;
+    max-width: 100%;
+    height: auto;
 
 }
 
@@ -447,10 +463,19 @@ hr {
 
 .wedo {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .wedo_item {
     width: 50%;
+    padding: 0 15px;
+}
+
+.wedo_img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* garmozka*/
@@ -1059,4 +1084,182 @@ hr {
 
 .copyright span {
     color: #f38181;
+}
+
+@media (max-width: 1230px) {
+
+    /* Intro */
+    .intro_suptitle {
+        font-size: 52px;
+    }
+
+    .intro_title {
+        font-size: 120px;
+    }
+}
+
+@media (max-width: 990px) {
+    /* Intro */
+    .intro_suptitle {
+        font-size: 32px;
+    }
+
+    .intro_title {
+        font-size: 80px;
+    }
+
+    /*Stat */
+    .stat {
+        justify-content: center;
+    }
+
+    .stat_item {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex: none;
+        width: 33.33333%;
+        border: 0;
+    }
+
+    .stat_item:last-child {
+        border-right: 0;
+    }
+
+    /*services*/
+
+    .services_item {
+        width: 50%;
+        padding-bottom: 0;
+    }
+
+    .services_item--border {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 770px) {
+
+    /*nav*/
+    .nav {
+        display: none;
+    }
+
+    /*section*/
+
+    .section {
+        padding: 40px 0;
+    }
+
+    .section--devices {
+        padding-bottom: 0;
+    }
+
+    /*about*/
+
+    .about {
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .about_item {
+        width: 100%;
+        max-width: 410px;
+        margin-bottom: 30px;
+    }
+
+    .about_item:last-child {
+        margin-bottom: 0;
+    }
+
+    /*slyder*/
+    .slider_text {
+        display: none;
+    }
+
+    .slider_item.active:before {
+        width: 50%;
+    }
+
+    /*services*/
+
+    .services {
+        justify-content: center;
+    }
+
+    .services_item {
+        width: 100%;
+        max-width: 400px;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .services_icon {
+        left: 0;
+    }
+
+    /* we do */
+
+    .wedo_img {
+        display: none;
+    }
+
+    .wedo_item {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 575px) {
+    /* Intro */
+    .intro_suptitle {
+        font-size: 22px;
+    }
+
+    .intro_title {
+        font-size: 40px;
+    }
+
+    /*section*/
+
+    .section_header {
+         margin-bottom: 50px;
+    }
+
+    .section_title {
+        font-size: 24px;
+    }
+
+    .section_subtitle {
+        font-size: 20px;
+    }
+
+    .section_title::after {
+        margin: 20px auto;
+    }
+
+    /*Stat */
+
+    .stat_item {
+        width: 100%;
+        border-bottom: 1px solid #b5eae0;
+    }
+
+    .stat_item:last-child {
+        border: 0;
+    }
+
+    .stat_count {
+        font-size: 52px;
+    }
+
+    /* devices */
+
+    .devices {
+        max-width: 320px;
+    }
+
+    .devices_item--iphone {
+        width: 180px;
+    }
+
 }

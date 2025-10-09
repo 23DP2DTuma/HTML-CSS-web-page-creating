@@ -1353,4 +1353,10 @@ hr {
         margin: 0 auto;
     }
 
+    /*works */
+
+    .works_col {
+        width: 100%;
+    }
+
 }

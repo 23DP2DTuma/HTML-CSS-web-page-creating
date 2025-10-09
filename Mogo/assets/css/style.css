@@ -556,6 +556,9 @@ hr {
 }
 
 .reviews_foto {
+    display: block;
+    width: 210px;
+    height: 210px;
     position: absolute;
     border-radius: 50%;
     left: 0;
@@ -565,7 +568,7 @@ hr {
 }
 
 .reviews_text {
-    padding-top: 30px;
+    padding-top: 20px;
     font-size: 24px;
     font-style: italic;
     font-weight: 300;
@@ -654,6 +657,17 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+}
+
+.logos_item {
+    padding: 0 15px;
+}
+
+.logos_image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* works */
@@ -1096,6 +1110,12 @@ hr {
     .intro_title {
         font-size: 120px;
     }
+
+    /*reviews*/
+
+    .reviews_text {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -1134,6 +1154,21 @@ hr {
 
     .services_item--border {
         border-bottom: 0;
+    }
+
+    /*reviews*/
+
+    .reviews {
+        padding: 0 60px;
+    }
+
+    .reviews_foto {
+        width: 150px;
+        height: 150px;
+    }
+
+    .reviews_item {
+        padding-left: 175px;
     }
 }
 
@@ -1207,6 +1242,36 @@ hr {
         width: 100%;
     }
 
+    /*reviews*/
+
+    .reviews_foto {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .reviews_item {
+        padding-left: 0;
+    }
+
+    .reviews_text {
+        font-size: 15px;
+    }
+
+    .reviews_autor {
+        font-size: 20px;
+    }
+
+    /*works */
+
+    .works {
+        flex-wrap: wrap;
+    }
+
+    .works_col {
+        flex: none;
+        width: 50%;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -1260,6 +1325,32 @@ hr {
 
     .devices_item--iphone {
         width: 180px;
+    }
+
+    /*reviews*/
+
+    .reviews {
+        padding: 0;
+    }
+
+    .reviews_btn {
+        top: 18%;
+    }
+
+    /* logos*/
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logos_item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logos_image {
+        margin: 0 auto;
     }
 
 }

@@ -783,6 +783,7 @@ hr {
 /* blog */
 
 .blog {
+    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
 }
@@ -910,6 +911,12 @@ hr {
     padding-bottom: 65px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.footer_col {
+    padding: 0 15px;
 }
 
 .footer_col--first {
@@ -1022,12 +1029,14 @@ hr {
 }
 
 .instagram_item {
-    width: 32.33333%;
+    width: 33%;
     border-bottom: 1px solid #fff;
 }
 
 .instagram_item img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 /* subscribe block */
@@ -1036,6 +1045,7 @@ hr {
     width: 100%;
     max-width: 380px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .subscibe_input {
@@ -1170,6 +1180,42 @@ hr {
     .reviews_item {
         padding-left: 175px;
     }
+
+    /*clients */
+
+    .clients {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .clients_item {
+        width: 100%;
+        padding-right: 0;
+    }
+
+    /* footr*/
+
+    .footer_col--first {
+        width: 100%;
+    }
+
+    .footer_col--second {
+        width: 50%;
+    }
+
+    .footer_col--third {
+        width: 50%;
+    }
+
+    .instagram {
+        justify-content: flex-start;
+    }
+
+    .instagram_item {
+        width: auto;
+        border-right: 1px solid #fff;
+    }
+
 }
 
 @media (max-width: 770px) {
@@ -1271,6 +1317,32 @@ hr {
         flex: none;
         width: 50%;
     }
+    
+    /* blog */
+
+    .blog {
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .blog_item {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .blog_item:last-child {
+        margin-bottom: 0;
+    }
+
+    /* footr*/
+
+    .footer_col--second {
+        width: 100%;
+    }
+
+    .footer_col--third {
+        width: 100%;
+    }
 
 }
 
@@ -1357,6 +1429,43 @@ hr {
 
     .works_col {
         width: 100%;
+    }
+
+    .works_img {
+        width: 100%;
+    }
+
+    /* clients */
+
+    .clients_item {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .clients_foto {
+        position: static;
+    }
+
+    .clients_text::before {
+        margin: 15px auto;
+    }
+
+    .clients_item:last-child {
+        margin-bottom: 0;
+    }
+
+    /* ssubscibe */
+
+    .subscribe {
+        max-width: none;
+    }
+
+    .subscibe_btn, .subscibe_input {
+        width: 100%;
+    }
+
+    .subscibe_input {
+        border-right: 1px solid #e5e5e5;
     }
 
 }

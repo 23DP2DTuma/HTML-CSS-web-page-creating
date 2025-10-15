@@ -18,15 +18,15 @@
 
     <header class="header">
         <div class="container">
-            <div class="header_inner">
+            <div class="header_inner" id="header">
                 <div class="header_logo">MoGo</div>
 
                 <nav class="nav">
-                    <a class="nav-link active" href="#">About</a>
-                    <a class="nav-link" href="#">Service</a>
-                    <a class="nav-link" href="#">Blog</a>
-                    <a class="nav-link" href="#">Work</a>
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link active" href="#" data-scroll="#about">About</a>
+                    <a class="nav-link" href="#" data-scroll="#services">Service</a>
+                    <a class="nav-link" href="#" data-scroll="#blogs">Blog</a>
+                    <a class="nav-link" href="#" data-scroll="#anyworks">Work</a>
+                    <a class="nav-link" href="#" data-scroll="#footer">Contact</a>
                     <a class="nav-link" href="#">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
@@ -43,7 +43,7 @@
 
     <div class="page">
 
-        <div class="intro">
+        <div class="intro" id="intro">
 
             <div class="container">
                 <div class="intro_inner">
@@ -78,7 +78,7 @@
 
         </div>
 
-        <section class="section">
+        <section class="section" id="about">
             <div class="container">
 
                 <div class="section_header">
@@ -155,7 +155,7 @@
         </div>
 
 
-        <section class="section">
+        <section class="section" id="services">
             <div class="container">
 
                 <div class="section_header">
@@ -204,7 +204,7 @@
             </div> <!--/.container-->
         </section>
 
-        <section class="section section--devices">
+        <section class="section section--devices" id="design">
             <div class="container">
                 <div class="section_header">
                     <h1 class="section_suptitle">For all devices</h1>
@@ -438,7 +438,7 @@
             </div>
         </div>
 
-        <section class="section">
+        <section class="section" id="anyworks">
             <div class="container">
                 <div class="section_header">
                     <h1 class="section_suptitle">What we do</h1>
@@ -588,7 +588,7 @@
             </div> <!--/.container -->
         </section>
 
-        <section class="section">
+        <section class="section" id="blogs">
             <div class="container">
                 <div class="section_header">
                     <h1 class="section_suptitle">Our Stories</h1>
@@ -694,7 +694,7 @@
             </div>
         </section>
 
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
                 <div class="footer_inner">
                     <div class="footer_col footer_col--first">
@@ -797,7 +797,11 @@
             </div> <!-- /. container -->
         </footer>
 
-    </div>
+    </div> <!-- /.page-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js">
+    </script>
+    <script src="assets/js/app.js"></script>
 
 
 </body>

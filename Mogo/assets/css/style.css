@@ -188,6 +188,10 @@ hr {
     display: none;
 }
 
+.nav-toogle:focus {
+    outline: 0;
+}
+
 .nav-toogle-item {
     display: block;
     width: 100%;
@@ -592,7 +596,6 @@ hr {
 
 .garmozka_header {
     padding: 15px 20px 15px 65px;
-    border-bottom: 1px solid transparent;
     position: relative;
     cursor: pointer;
 }
@@ -638,13 +641,17 @@ hr {
 /*reviews*/
 
 .reviews {
-    padding: 0 110px;
     position: relative;
+}
+
+.reviews .slick-slider {
+    padding: 0 110px;
 }
 
 .reviews_item {
     padding-left: 255px;
     position: relative;
+    min-height: 210px;
 }
 
 .reviews_foto {
@@ -683,16 +690,18 @@ hr {
     margin-right: 10px;
 }
 
-.reviews_btn {
+.slick-arrow {
     font-size: 0;
     color: transparent;
     position: absolute;
+    background: none;
+    border: 0;
     top: 50%;
     z-index: 1;
     transform: translateY(-50%);
 }
 
-.reviews_btn:after {
+.slick-arrow:after {
     content: "";
     display: block;
     width: 16px;
@@ -702,14 +711,20 @@ hr {
 
 }
 
-.reviews_btn--Prev {
-    left: 0;
-    transform: rotate(-135deg);
+.slick-arrow:focus {
+    outline: 0;
 }
 
-.reviews_btn--next {
+.slick-prev {
+    left: 0;
+    transform: rotate(-135deg);
+    cursor: pointer;
+}
+
+.slick-next {
     right: 0;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
 
@@ -1260,7 +1275,7 @@ hr {
 
     /*reviews*/
 
-    .reviews {
+    .reviews .slick-slider {
         padding: 0 60px;
     }
 
@@ -1336,6 +1351,10 @@ hr {
         top: 100%;
         left: 0;
         background-color: #eb8b8d;
+    }
+
+    .nav.active {
+        display: block;
     }
 
     .nav-link {
@@ -1522,11 +1541,11 @@ hr {
 
     /*reviews*/
 
-    .reviews {
+    .reviews .slick-slider {
         padding: 0;
     }
 
-    .reviews_btn {
+    .slick-arrow {
         top: 18%;
     }
 
